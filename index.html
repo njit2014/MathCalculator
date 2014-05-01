@@ -1,0 +1,140 @@
+<fhtml>
+ <head>
+
+    <title>SCIENTIFIC CALCULATOR</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="Author" content="Neeraj Bhurewar" />
+    <meta http-equiv="Copyright" content="2014 Neeraj Bhurewar" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="Robots" content="all" />
+
+    <meta name="Distribution" content="global" />
+    <meta name="Keywords" content="SCIENTIFIC CALCULATOR, HTML 5, CSS 3, jQuery, Online Calculator, Free Calculator, Math Calculator" />
+    <meta name="Description" content ="Free online SCIENTIFIC CALCULATOR with virtual memory: HTML 5, CSS 3, jQuery" />
+
+    <!--CSS-->
+    <link href="Calculator.css" rel="stylesheet" type="text/css" />   
+     
+     <!--LINK TO jQUERY LIB-->
+    <script type="text/javascript" 
+        src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js">
+    </script>
+
+    <script type="text/javascript">
+        var refPage = "http://www.web.njit.edu/~nb32/MathCalculator";
+        var delOpen = 5000;
+    </script>
+
+     <!--CALCULATOR SCRIPT-->
+    <script src="Calculator.js" type="text/javascript"></script>
+
+ </head>
+
+ <body>
+   
+   <!--ADDED FOR OLDER IE PARTIAL COMPATIBILITY-->
+    <!--[if !IE]><!--><div class="centerColumn"><!--<![endif]-->
+   <!--[if IE 9]><div class="centerColumn"><![endif]-->
+   <!--[if IE 8]><div id="ie" class="centerColumn"><![endif]-->
+   <!--[if IE 7]><div id="ie" class="centerColumn"><![endif]-->
+   <!--[if lte IE 6]><div id="ie" class="centerColumn"><![endif]-->
+   	
+	    
+   	    <div class="clear"></div>
+
+   	    <div class = "main">
+    	    <div class="inf">i</div>
+    	    <header>
+      		    <h1>MATH CALCULATOR</h1>
+    	    </header>
+     	    <div class="clear"></div>
+     	
+	        <div id="NumPad">
+		
+		        <!--USER INPUT-->
+		        <div class="keys_ToRight">
+			        <button id="NumPad_btnToMem">&#8681</button>
+		        </div>
+        	        <input type="text" id="NumPad_UserInput" readonly /></input>
+		        <div class="clear"></div>
+		
+		        <!--MEM-->
+		        <div class="keys_ToRight">
+			        <button id="NumPad_btnFromMem">&#8679</button>
+		        </div>
+ 		        <input type="text" id="NumPad_Mem" readonly /></input> 
+      		        <div class="clear"></div>
+
+		        <!--1st ROW-->
+		        <div class="keys_ToRight">
+			        <button id="NumPad_btnPlus" class="NumPad_btnNormal">+</button>
+			        <button id="NumPad_btnMinus" class="NumPad_btnNormal">-</button>
+			        <button id="NumPad_btnMult" class="NumPad_btnNormal">*</button>
+			        <button id="NumPad_btnDiv" class="NumPad_btnNormal">/</button>	
+		        </div>
+
+		        <button id="NumPad_btn1" class="NumPad_btnNormal">1</button>
+        	        <button id="NumPad_btn2" class="NumPad_btnNormal">2</button>
+        	        <button id="NumPad_btn3" class="NumPad_btnNormal">3</button>
+		        <div class="clear"></div>
+		
+		        <!--2nd ROW-->	
+		        <div class="keys_ToRight">
+			        <button id="NumPad_btnInverseSign" class="NumPad_btnCommand">+/-</button>
+			        <button id="NumPad_btnInverse" class="NumPad_btnCommand">1/x</button>
+			        <button id="NumPad_btnSquare" class="NumPad_btnCommand">x<sup>2</sup></button>
+			        <button id="NumPad_btnSquareRoot" class="NumPad_btnCommand">&#8730</button>
+		        </div>
+        	        <button id="NumPad_btn4" class="NumPad_btnNormal">4</button>
+        	        <button id="NumPad_btn5" class="NumPad_btnNormal">5</button>
+        	        <button id="NumPad_btn6" class="NumPad_btnNormal">6</button>
+		        <div class="clear"></div>
+ 
+		        <!--3rd ROW-->	  
+		        <div class="keys_ToRight">
+			        <button id="NumPad_btnCube" class="NumPad_btnCommand">x<sup>3</sup></button>
+			        <button id="NumPad_btnCubeRoot" class="NumPad_btnCommand">&#8731</button>
+			        <button id="NumPad_btnLog" class="NumPad_btnCommand">Log</button>
+			        <button id="NumPad_btnExp" class="NumPad_btnCommand">e<sup>x</sup></button>
+		        </div>     
+		        <button id="NumPad_btn7" class="NumPad_btnNormal">7</button>
+        	        <button id="NumPad_btn8" class="NumPad_btnNormal">8</button>
+        	        <button id="NumPad_btn9" class="NumPad_btnNormal">9</button>
+		        <div class="clear"></div>
+
+		        <!--4th ROW-->
+		        <div class="keys_ToRight">
+			        <button id="NumPad_btnSin" class="NumPad_btnCommand">sin</button>
+			        <button id="NumPad_btnCosin" class="NumPad_btnCommand">cos</button>
+			        <button id="NumPad_btnTg" class="NumPad_btnCommand">tan</button>
+			        <button id="NumPad_btnCtg" class="NumPad_btnCommand">ctg</button>
+		        </div> 
+		        <button id="NumPad_btnDot" class="NumPad_btnNormal">.</button>
+        	        <button id="NumPad_btn0" class="NumPad_btnNormal">0</button>
+		        <button id="NumPad_btnSpace" class="NumPad_btnSpace">SPC</button>
+		        <div class="clear"></div>
+
+		        <!--5th ROW-->
+		        <div class="keys_ToRight">
+			        <button id="NumPad_btnEnter" class="NumPad_btnEnter">=</button>
+		        </div>  
+        	        <button id="NumPad_btnBack" class="NumPad_btnBack">&#8678</button>
+		        <button id="NumPad_btnClr" class="NumPad_btnClr">CLR</button>
+		        <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+
+            <article>
+	        <div class = "panel">
+	 	       
+                </ol>
+     	      </div>
+    	     </article>
+    	    <div class="clear"></div>
+
+     	    </p>
+         </div>
+
+   </div>
+ </body>
+</html>
