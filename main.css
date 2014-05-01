@@ -54,7 +54,7 @@ div.main {
     background: -moz-linear-gradient(top, #404040, #707070);
 }
 
-/* DIV CONTAINING KEYS AND INPUT/MEM BOXES */
+/* DIV CONTAINS MEMORY CODE FOR INPUT BOX */
 div#NumPad { width: 100%; }
 
 .panel  {
