@@ -78,6 +78,8 @@ div#NumPad { width: 100%; }
 /* CLEAR BOTH */
 .clear {clear:both;}
 
+/*Declaring h1 and h2 */
+
 h1 {
     margin:0px 0px 7px 3px; 
     font-size: 12pt;
